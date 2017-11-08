@@ -44,7 +44,7 @@ img{margin-bottom:-5px
 nav{
 	position: fixed; 
 	width: 100%;
-	background-color: black; 
+	background-color: #002b4f; 
 	padding: 1em 1em 1em 1em;
 	margin: 0 0 0 0
 }
@@ -52,13 +52,13 @@ footer{
 	background-color: black; 
 	padding: 1em 1em 1em 1em;
 	margin: 0 0 0 0;
-	color: white; 
+	color: #002b4f; 
 }
 
 a.blackbgrnd{
 	padding-left: 2em;
 	padding-right: 2em;
-	color:white;
+	color:#f39000;
 	font-size: 16px;
 	text-decoration: none
 }
