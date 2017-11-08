@@ -1,14 +1,47 @@
+@font-face {
+	font-family: "mic32bold";
+	src: url("Fonts/Mic32New-Bd.otf");
+}
+@font-face {
+	font-family: "mic32boldit";
+	src: url("Fonts/Mic32New-BdIt.otf");
+}
+@font-face {
+	font-family: "mic32light";
+	src: url("Fonts/Mic32New-Lt.otf");
+}
+@font-face {
+	font-family: "mic32lightit";
+	src: url("Fonts/Mic32New-LtIt.otf");
+}
+@font-face {
+	font-family: "mic32med";
+	src: url("Fonts/Mic32New-Md.otf");
+}
+@font-face {
+	font-family: "mic32medit";
+	src: url("Fonts/Mic32New-MdIt.otf");
+}
+@font-face {
+	font-family: "mic32reg";
+	src: url("Fonts/Mic32New-Rg.otf");
+}
+@font-face {
+	font-family: "mic32regit";
+	src: url("Fonts/Mic32New-RgIt.otf");
+}
+
 html{
 	margin: 0 0 0 0;
 }
 body{
-	font-family: Verdana,sans-serif;
-	font-size: 15px;
+	font-family: mic32reg,sans-serif;
+	font-size: 12px;
 	line-height:1.5;
 	margin: 0 0 0 0;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family:"Segoe UI",Arial,sans-serif
+	font-family:"mic32med",Arial,sans-serif
 }
 h1{
 	font-size:36px
@@ -52,15 +85,29 @@ footer{
 	background-color: #002b4f; 
 	padding: 1em 1em 1em 1em;
 	margin: 0 0 0 0;
-	color: #002b4f; 
 }
 
 a.blackbgrnd{
+	padding-left: 0.75em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 0.75em;
+	margin-left: 1em;
+	margin-right: 1em;
+	color:#FFF;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 0.5em;
+	background-color: rgba(243,144,0,0.9);
+}
+a.blackbgrndfoot{
 	padding-left: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 	padding-right: 2em;
 	color:#f39000;
 	font-size: 16px;
-	text-decoration: none
+	text-decoration: none;
 }
 .mySlides{
 	display: table-cell;
@@ -100,15 +147,24 @@ a.blackbgrnd{
 }
 .centerthirds{	
 	position: inline-block;
-	text-align: center
+	text-align: center;
+	/*text-align: justify;*/
+    /*text-justify: inter-word;*/
+}
+.centerthirdstop{	
+	position: inline-block;
+	text-align: center;
+	padding-top: 3em;
 	/*text-align: justify;*/
     /*text-justify: inter-word;*/
 }
 .thirds{
 	width:25%;
-	background-color: beige;
+	background-color:  rgba(0,43,79,1);
 	display:inline-block;
 	margin: 2em 3% 2em 3%;
+	border-radius: 1em;
+	color:white;
 }
 button{
 	background-color: rgba(0, 0, 0, 0.5);
