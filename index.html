@@ -16,9 +16,6 @@
 			  <a href="books.html" class="blackbgrnd">Books</a>
 			  <a href="characters.html" class="blackbgrnd">Characters</a>
 			  <a href="contact.html" class="blackbgrnd">Contact</a>
-			<audio id="myaudio" autoplay="" type="audio/mpeg">
-			</audio>
-			<button type="button" onclick="aud_play_pause()"><b>Play/Pause</b></button>
 			</nav> 
 				</center>
 			<!-- Slide Show -->
@@ -104,35 +101,6 @@
 			    x[myIndex-1].style.display = "block";
 			    setTimeout(carousel, 3000);
 			}
-		//Play/Pause Button
-			function aud_play_pause() {
-			  var myaudio = document.getElementById("myaudio");
-			  if (myaudio.paused) {
-			    myaudio.play();
-			  } else {
-			    myaudio.pause();
-			  }
-			}
-		//Random Songs
-				var sounds = new Array();
-				sounds[0]="TouchMyBody.mp3";
-				sounds[1]="NGGYU.mp3";
-				sounds[2]="AllStar.mp3"; 
-				sounds[3]="someBODY.mp3";
-				sounds[4]="Froot.m4a";
-				sounds[5]="ThousandMiles.mp3";
-				sounds[6]="HeyYa.mp3";
-				sounds[7]="YMCA.mp3"; 
-				sounds[8]="Shia.mp3";
-				sounds[9]="MainTheme.m4a";
-				
-				function getRandomSounds() {
-				    var randomNum = Math.floor(Math.random()*sounds.length);
-				    document.getElementById("myaudio").src = sounds[randomNum];
-				}
-				getRandomSounds();
-			//Tells people that music is available
-				window.alert("Listen to some tunes!, press the play/pause button in the menu bar!");
 		</script>
 	</body>
 </html>
