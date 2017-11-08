@@ -122,8 +122,8 @@ a.blackbgrndfoot{
 .container{
 	display:inline-block;
 	padding: 2em 2em 2em 2em;
-	text-align: justify;
-    text-justify: inter-word;
+	/*text-align: justify;
+    text-justify: inter-word;*/
     min-height: calc(100vh - 10.6em);
 }
 .container600{
