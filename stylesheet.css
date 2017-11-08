@@ -131,7 +131,7 @@ a.blackbgrndfoot{
 	max-width: 700px;
 	text-align: justify;
     text-justify: inter-word;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 6em);
     /* 80px header + 40px footer = 120px  */
 }
 .center{
