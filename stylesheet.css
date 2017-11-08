@@ -1,34 +1,34 @@
 @font-face {
 	font-family: "mic32bold";
-	src: url("font/Mic32New-Bd.otf");
+	src: url("mic32bold.otf");
 }
 @font-face {
 	font-family: "mic32boldit";
-	src: url("font/Mic32New-BdIt.otf");
+	src: url("mic32boldit.otf");
 }
 @font-face {
 	font-family: "mic32light";
-	src: url("font/Mic32New-Lt.otf");
+	src: url("mic32light.otf");
 }
 @font-face {
 	font-family: "mic32lightit";
-	src: url("font/Mic32New-LtIt.otf");
+	src: url("mic32LtIt.otf");
 }
 @font-face {
 	font-family: "mic32med";
-	src: url("font/Mic32New-Md.otf");
+	src: url("mic32med.otf");
 }
 @font-face {
 	font-family: "mic32medit";
-	src: url("font/Mic32New-MdIt.otf");
+	src: url("mic32medit.otf");
 }
 @font-face {
 	font-family: "mic32reg";
-	src: url("font/Mic32New-Rg.otf");
+	src: url("mic32reg.otf");
 }
 @font-face {
 	font-family: "mic32regit";
-	src: url("font/Mic32New-RgIt.otf");
+	src: url("mic32regit.otf");
 }
 
 html{
