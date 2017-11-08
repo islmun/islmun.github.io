@@ -1,47 +1,47 @@
 @font-face {
 	font-family: "mic32bold";
-	src: url("Fonts/Mic32New-Bd.otf");
+	src: url("Font/Mic32New-Bd.otf");
 }
 @font-face {
 	font-family: "mic32boldit";
-	src: url("Fonts/Mic32New-BdIt.otf");
+	src: url("Font/Mic32New-BdIt.otf");
 }
 @font-face {
 	font-family: "mic32light";
-	src: url("Fonts/Mic32New-Lt.otf");
+	src: url("Font/Mic32New-Lt.otf");
 }
 @font-face {
 	font-family: "mic32lightit";
-	src: url("Fonts/Mic32New-LtIt.otf");
+	src: url("Font/Mic32New-LtIt.otf");
 }
 @font-face {
 	font-family: "mic32med";
-	src: url("Fonts/Mic32New-Md.otf");
+	src: url("Font/Mic32New-Md.otf");
 }
 @font-face {
 	font-family: "mic32medit";
-	src: url("Fonts/Mic32New-MdIt.otf");
+	src: url("Font/Mic32New-MdIt.otf");
 }
 @font-face {
 	font-family: "mic32reg";
-	src: url("Fonts/Mic32New-Rg.otf");
+	src: url("Font/Mic32New-Rg.otf");
 }
 @font-face {
 	font-family: "mic32regit";
-	src: url("Fonts/Mic32New-RgIt.otf");
+	src: url("Font/Mic32New-RgIt.otf");
 }
 
 html{
 	margin: 0 0 0 0;
 }
 body{
-	font-family: mic32reg,sans-serif;
-	font-size: 12px;
+	font-family: mic32light;
+	font-size: 15px;
 	line-height:1.5;
 	margin: 0 0 0 0;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family:"mic32med",Arial,sans-serif
+	font-family:"mic32med";
 }
 h1{
 	font-size:36px
@@ -80,11 +80,6 @@ nav{
 	background-color: #002b4f; 
 	padding: 1em 1em 1em 1em;
 	margin: 0 0 0 0
-}
-footer{
-	background-color: #002b4f; 
-	padding: 1em 1em 1em 1em;
-	margin: 0 0 0 0;
 }
 
 a.blackbgrnd{
@@ -133,7 +128,7 @@ a.blackbgrndfoot{
 .container600{
 	display:inline-block;
 	padding: 2em 2em 2em 2em;
-	max-width: 600px;
+	max-width: 700px;
 	text-align: justify;
     text-justify: inter-word;
 }
@@ -171,6 +166,11 @@ button{
 	border: none;
 	color: white;
 	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+footer{
+	background-color: rgba(0,43,79,1); 
+	padding: 1em 1em 1em 1em;
+	margin: 0 0 0 0;
 }
 /*a{
 	color:inherit
