@@ -79,7 +79,13 @@ nav{
 	width: 100%;
 	background-color: #002b4f; 
 	padding: 1em 1em 1em 1em;
-	margin: 0 0 0 0
+	margin: 0 0 0 0;
+	width: 78%; 
+	border-radius: 0.5em; 
+	position: fixed; 
+	left: 0; 
+	right: 0; 
+	margin: 0 auto;
 }
 
 a.blackbgrnd{
@@ -107,6 +113,9 @@ a.blackbgrndfoot{
 .mySlides{
 	display: table-cell;
 	vertical-align: middle;
+	left: 0; 
+	right: 0; 
+	margin: 0 auto;
 }
 .slideshow{
 	padding: 3.5em 0em 0 0em;

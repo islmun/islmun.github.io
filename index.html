@@ -6,13 +6,15 @@
 		<link rel="stylesheet" href="stylesheet.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 		<meta name="theme-color" content="#ffffff">
+		<title>ISLMUN | Home</title> 
 	</head>
-	<body>
+	<body onLoad="switchImage('mySlides')">
 		<header>
 			 <!-- Navigation -->
+			 <center>
 			<nav>
 				<center>
-			  <a href="index.html" class="blackbgrnd">Home</a>
+			  <a href="index.html" class="blackbgrnd" style="color:#002b4f; background-color: white;">Home</a>
 			  <a href="exec2.html" class="blackbgrnd">Executive Team</a>
 			  <a href="director.html" class="blackbgrnd">Director's Message</a>
 			  <a href="secgen.html" class="blackbgrnd">Secretary General</a>
@@ -20,8 +22,10 @@
 			  <a href="procedures.html" class="blackbgrnd">ISLMUN Procedures</a>
 				</center>
 			</nav> 
+			</center>
 			<!-- Slide Show -->
 			<center>
+
 			<section class="slideshow">
 			  <img class="mySlides" src="jan.jpg" style="height:100%; "><!--height: 15em!-->
 			  <img class="mySlides" src="jan.jpg" style="height:100%; "><!--height: 15em!-->
@@ -52,6 +56,12 @@
 		</main>
 		<footer>
 			<center>
+			<p>
+				<a href="#" onClick="switchImage('mySlides')">play slide show</a>
+				<a href="#" onClick="clearTimeout(timerID)"> pause</a>
+				<a href="#" onClick="prevImage('mySlides'); clearTimeout(timerID)"> previous</a>
+				<a href="#" onClick="switchImage('mySlides'); clearTimeout(timerID)">next </a>
+			</p>
 		  <p class="w3-medium">
 			<a href="#" class="blackbgrndfoot"><i class="fa fa-facebook-official"></i></a>
 			<a href="#" class="blackbgrndfoot"><i class="fa fa-snapchat"></i></a>
@@ -62,20 +72,44 @@
 
 		<script>
 			 		// Automatic Slideshow - change image every 3 seconds
-			var myIndex = 0;
-			carousel();
+			// var myIndex = 0;
+			// carousel();
 			
-			function carousel() {
-			    var i;
-			    var x = document.getElementsByClassName("mySlides");
-			    for (i = 0; i < x.length; i++) {
-			        x[i].style.display = "none";
-			    }
-			    myIndex++;
-			    if (myIndex > x.length) {myIndex = 1}
-			    x[myIndex-1].style.display = "block";
-			    setTimeout(carousel, 3000);
-			}
+			// function carousel() {
+			//     var i;
+			//     var x = document.getElementsByClassName("mySlides");
+			//     for (i = 0; i < x.length; i++) {
+			//         x[i].style.display = "none";
+			//     }
+			//     myIndex++;
+			//     if (myIndex > x.length) {myIndex = 1}
+			//     x[myIndex-1].style.display = "block";
+			//     setTimeout(carousel, 3000);
+			// }
+			
+			var interval = 1500; var random_display = 0; var imageDir = "my_images/"; 
+			var imageNum = 0; imageArray = new Array(); imageArray[imageNum++] = new imageItem(imageDir + "01.jpg"); 
+			
+			imageArray[imageNum++] = new imageItem(imageDir + "02.jpg");
+			imageArray[imageNum++] = new imageItem(imageDir + "03.jpg"); 
+			imageArray[imageNum++] = new imageItem(imageDir + "04.jpg"); 
+			imageArray[imageNum++] = new imageItem(imageDir + "05.jpg");
+			
+			var totalImages = imageArray.length; 
+
+			function imageItem(image_location) { this.image_item = new Image(); this.image_item.src = image_location; } function get_ImageItemLocation(imageObj) { return(imageObj.image_item.src) } 
+
+			function randNum(x, y) { var range = y - x + 1; return Math.floor(Math.random() * range) + x; } 
+
+			function getNextImage() { if (random_display) { imageNum = randNum(0, totalImages-1); } else { imageNum = (imageNum+1) % totalImages; } 
+
+			var new_image = get_ImageItemLocation(imageArray[imageNum]); return(new_image); } 
+
+			function getPrevImage() { imageNum = (imageNum-1) % totalImages; var new_image = get_ImageItemLocation(imageArray[imageNum]); return(new_image); }
+
+			function prevImage(place) { var new_image = getPrevImage(); document[place].src = new_image; } 
+
+			function switchImage(place) { var new_image = getNextImage(); document[place].src = new_image; var recur_call = "switchImage('"+place+"')"; timerID = setTimeout(recur_call, interval); }  
 		</script>
 	</body>
 </html>
