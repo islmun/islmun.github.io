@@ -249,19 +249,36 @@ footer{
 			#nav > ul
 			{
 				height: 2.5em; /* 60 */
-				background-color: #002b4f;
+				/*background-color: #002b4f;*/
 				border-radius: 0.1em 0.7em 0.1em 0.7em; 
 				padding-left: 0;
+
+				float:center;
+				text-align: center;
+				left:50%;
+				/*clear:left;*/
+   				float:left;
+   				list-style:none;
+   				margin:0;
+   				padding:0;
+   				position:relative;
+   				left:50%;
+   				text-align:center;
+   				padding-top: 0.5em;
+				padding-bottom: 0.5em;
 			}
 				#nav > ul > li
 				{
-					width: 16%;
+					width: auto;
 					height: 100%;
 					float: left;
-					margin-left:0.2em;
-					margin-right:0.2em;
+					margin-left:0.1em;
+					margin-right:0.1em;
 					border-radius: 0.1em 0.7em 0.1em 0.7em; 
 					border-color: rgba(255,255,255,1);
+					text-align: center;
+					display:block;
+					right:50%;
 				}
 					#nav > ul > li > a
 					{
@@ -274,6 +291,9 @@ footer{
 						border-right-color: rgba(255,255,255,1);
 						border-left-color: rgba(255,255,255,1);*/
 						border-color: rgba(255,255,255,1);
+						white-space:nowrap;
+						padding-right: 1em;
+						padding-left: 1em;
 					}
 						#nav > ul > li:not( :last-child ) > a
 						{
@@ -333,7 +353,7 @@ footer{
 			}
 		}
 
-		@media only screen and ( max-width: 40em ) /* 640 */
+		@media only screen and ( max-width: 65.6em ) /* 1050 */
 		{
 			html
 			{
@@ -347,6 +367,7 @@ footer{
 				left: auto;
 				width: 80%;
 				margin-bottom: -2em;
+				background-color: #002b4f;
 			}
 				#nav > a
 				{
@@ -388,6 +409,8 @@ footer{
 				position: absolute;
 				left: 0;
 				right: 0;
+				background-color: #002b4f;
+				float:center;
 			}
 				#nav:target > ul
 				{
@@ -397,17 +420,26 @@ footer{
 				{
 					width: 98%;
 					float: none;
+					left:1%;
+					right:0;
 				}
 					#nav > ul > li > a
 					{
 						height: auto;
 						text-align: left;
 						padding: 0 0.833em; /* 20 (24) */
+						border-left: none;
+						background-color: #002b4f;
 					}
 						#nav > ul > li:not( :last-child ) > a
 						{
 							border-right: none;
-							border-bottom: 1px solid rgba(243,144,0,1);
+						}
+						#nav > ul > li:not( :first-child ) > a
+						{
+							border-right: none;
+							border-top: 1px solid rgba(243,144,0,1);
+							border-left: none;
 						}
 
 
