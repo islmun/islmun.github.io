@@ -3,6 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="w3.css">
+		<style>
+			.mySlides {display:none}
+			.w3-left, .w3-right, .w3-badge {cursor:pointer}
+			.w3-badge {height:13px;width:13px;padding:0}
+			.w3-center {display:inline-block;width:auto}
+		</style>
 		<link rel="stylesheet" href="stylesheet.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 		<meta name="theme-color" content="#ffffff">
@@ -16,6 +23,7 @@
 		<link rel="icon" href="../favicon.ico" />
 		<link rel="stylesheet" href="../main.css" />
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400">
+
 	</head>
 	<body>
 		<header>
@@ -27,7 +35,7 @@
 		<li class="active" style="text-align: center;"><a href="index.html" style="text-align: center;"><span>Home</span></a>
 			<ul  style="list-style: none;">
 				<li><a href="main18.html">ISLMUN 2018:</a></li>
-				<li class="active"><a href="pressvid.html">Press and Video</a></li>
+				<li><a href="pressvid.html">Press and Video</a></li>
 				<li><a href="sampdocs.html">Sample Documents</a></li>
 			</ul>
 		</li>
@@ -79,22 +87,33 @@
 				</center>
 			</nav> 			--> 
 			</center>
-
-
-			<center>
-
-			<section class="slideshow">
-			  <img class="mySlides" src="01.jpg" style="height:100%; "><!--height: 15em!-->
-			  <img class="mySlides" src="02.jpg" style="height:100%; "><!--height: 15em!-->
-			  <img class="mySlides" src="03.jpg" style="height:100%; "><!--height: 15em!-->
-			  <img class="mySlides" src="04.jpg" style="height:100%; "><!--height: 15em!-->
-			  <img class="mySlides" src="05.jpeg" style="height:100%; "><!--height: 15em!-->
-			  <img class="mySlides" src="06.jpg" style="height:100%; "><!--height: 15em!-->
-			  <img class="mySlides" src="07.jpg" style="height:100%; "><!--height: 15em!-->
-			</section> 
-			</center>
 		</header>
-		<main>
+		<main style="background-color: #000000;">
+			<center>
+				<div class="w3-content" style="padding: 3.8em 0em 0 0em;background-color: #000000; height: calc(100vh - 4.3em); /*line-height: calc(100vh - 4.125em);*/ /*display: table-cell;*/ text-align: center; overflow: hidden; float:center; margin: 0 0 -5em 0; ">
+				  <img class="mySlides" src="01.jpg" style="/*display: table-cell;*/ vertical-align: middle; left: 0;  right: 0;  margin: 0 auto 0 auto; float:center; display:none; height: 100%">
+				  <img class="mySlides" src="02.jpg" style="/*display: table-cell;*/ vertical-align: middle; left: 0;  right: 0;  margin: 0 auto 0 auto; float:center; display:none; height: 100%">
+				  <img class="mySlides" src="03.jpg" style="/*display: table-cell;*/ vertical-align: middle; left: 0;  right: 0;  margin: 0 auto 0 auto; float:center; display:none; height: 100%">
+				  <img class="mySlides" src="04.jpg" style="/*display: table-cell;*/ vertical-align: middle; left: 0;  right: 0;  margin: 0 auto 0 auto; float:center; display:none; height: 100%">
+				  <img class="mySlides" src="05.jpeg" style="/*display: table-cell;*/ vertical-align: middle; left: 0; right: 0;  margin: 0 auto 0 auto; float:center; display:none; height: 100%">
+				  <img class="mySlides" src="06.jpg" style="/*display: table-cell;*/ vertical-align: middle; left: 0;  right: 0;  margin: 0 auto 0 auto; float:center; display:none; height: 100%">
+				  <video class="mySlides" width="auto" style="height:100%" controls>
+					<source src="promo.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video> 
+				  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%; margin-top:0; padding-top:0.1em; top:83vh; padding-bottom: 0; margin-bottom: 0; background-color: rgba(0,0,0,0.2); height: 1.5em;line-height: 1.5em;">
+				    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+				    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+				    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+				    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+				    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+				    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+				    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+				    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+				    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+				  </div>
+				</div>
+			</center>
 			<!-- Band Description
 			<center>
 			<section class="container600">
@@ -118,31 +137,56 @@
 				<a href="#" onClick="prevImage('mySlides'); clearTimeout(timerID)" class="blackbgrndfoot"> previous</a>
 				<a href="#" onClick="switchImage('mySlides'); clearTimeout(timerID)" class="blackbgrndfoot">next </a>
 			</p> -->
-		  <p class="w3-medium">
-			<a href="#" class="blackbgrndfoot"><i class="fa fa-facebook-official"></i></a>
-			<a href="#" class="blackbgrndfoot"><i class="fa fa-snapchat"></i></a>
-			<a href="https://www.youtube.com/channel/UCCZ4RMJv7D1YVesMCjoO5DQ" target="_blank" class="blackbgrndfoot">Phone: +974 1234 5678</a>
-		  </p>
+			<p style="padding-top: 0.3em; margin-bottom: 0; padding-bottom: 0; bottom:0;">
+			<a href="#" class="blackbgrndfoot" style="padding-top: 0.5em; margin-bottom: 0; padding-bottom: 0; bottom:0;"><i class="fa fa-facebook-official"></i></a>
+			<a href="#" class="blackbgrndfoot" style="padding-top: 0.5em; margin-bottom: 0; padding-bottom: 0; bottom:0;"><i class="fa fa-snapchat"></i></a>
+			<a href="https://www.youtube.com/channel/UCCZ4RMJv7D1YVesMCjoO5DQ" target="_blank" class="blackbgrndfoot" style="padding-top: 0.5em; margin-bottom: 0; padding-bottom: 0; bottom:0;">Phone: +974 1234 5678</a> </p>
 			</center>
 		</footer>
 
-		<script>
-			//Automatic Slideshow - change image every 3 seconds
-			var myIndex = 0;
-			carousel();
-			
-			function carousel() {
-			    var i;
-			    var x = document.getElementsByClassName("mySlides");
-			    for (i = 0; i < x.length; i++) {
-			        x[i].style.display = "none";
-			    }
-			    myIndex++;
-			    if (myIndex > x.length) {myIndex = 1}
-			    x[myIndex-1].style.display = "block";
-			    setTimeout(carousel, 3000);
+
+			<script>
+			var slideIndex = 1;
+			//show slideshow elements
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
 			}
+
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			     dots[i].className = dots[i].className.replace(" w3-white", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " w3-white";
+			}
+			// //Automatic Slideshow - change image every 3 seconds
+			// carousel();
 			
+			// function carousel() {
+			//     var i;
+			//     var x = document.getElementsByClassName("mySlides");
+			//     for (i = 0; i < x.length; i++) {
+			//         x[i].style.display = "none";
+			//     }
+			//     slideIndex++;
+			//     if (slideIndex > x.length) {slideIndex = 1}
+			//     x[slideIndex-1].style.display = "block";
+			//     setTimeout(carousel, 3000);
+			// }			
 			// var interval = 1500; var random_display = 0; var imageDir = "my_images/"; 
 			// var imageNum = 0; imageArray = new Array(); imageArray[imageNum++] = new imageItem(imageDir + "01.jpg"); 
 			
