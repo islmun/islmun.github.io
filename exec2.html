@@ -114,7 +114,7 @@
 					<br />
 					<b>Conferences attended:</b> 6
 					</p>
-					<span class="abdullaex">
+					<span class="abdullaex" id="abdullaex">
 					<br />
 					<br />
 					<br />
@@ -161,7 +161,7 @@
 					<br />
 					<b>Conferences Attended:</b> 18
 					</p>
-					<span class="rahemaex">
+					<span class="rahemaex" id="rahemaex">
 					<br />
 					<br />
 					<br />
@@ -198,7 +198,7 @@
 					Grown out of a love for politics and suits, my journey with MUN has been short, yet momentous. Undertaking the representation of Delegations for New Zealand, Egypt, ad Indonesia, and a Chairing Position for the Security Council – I have come to gain a substantial understanding of the elements that have developed MUN into the collective powerhouse of debate and awareness that  it is today, an understanding that will most certainly assist me in my duty as responsible officer for the training of capable chairs – and as the collaborative organizer for the first ever International Court of Justice in an ISLQ MUN conference. With the hope that the coming conference will prove to be an insightful and joyous event, were participants will come to broaden their social circles and understandings of pressing global issues; I look forward to rejoicing with fellow students of Doha in two days that will exhibit the many graces of MUN. 
 					<br />
 					<b>Conferences Attended:</b> 4
-					<span class="mohammedex">
+					<span class="mohammedex" id="mohammedex">
 					<br />
 					<br />
 					<br />
@@ -235,7 +235,7 @@
 					<br />
 					<b>Conferences Attended:</b> 1
 					</p>
-					<span class="noorinex">
+					<span class="noorinex" id="noorinex">
 					<br />
 					<br />
 					<br />
@@ -265,7 +265,7 @@
 				</center>
 					<p style="text-align: justify; text-justify: inter-word;"> <img src="../jan.jpg" alt="Jan" align="left" style="padding-right: 1em; width:14em;">Hello, my name is Sarah Doshi and I serve as the Head of Admin Shadow through 2017-2018. The reason I joined MUN last year is because I wanted to broaden my critical thinking skills and get involved in discussions/debates about other nations. Model United Nations has helped me in not only my debating skills but also my researching and speech writing skills. It helped me look at issues in different perspectives and come up with resolutions that could help the future. Being able to be a part of the Executive Team is an honor and my job is to ensure that ISLMUN conference is the best it can be.
 					</p>
-					<span class="sarahex">
+					<span class="sarahex" id="sarahex">
 					<br />
 					<br />
 					<br />
@@ -287,22 +287,16 @@
 		  </p>
 			</center>
 		</footer>
-		.rheaex{
-				height:0;
-			}
-			.mohammedex{
-				height:0;
-			}
-			.noorinex{
-				height:0;
-			}
-			.sarahex{
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 			<script>
-				document.getElementByClass('abdullaex').style.display='none';
-				document.getElementByClass('mohamedex').style.display='none';
-				document.getElementByClass('abdullaex').style.display='none';
-				document.getElementByClass('abdullaex').style.display='none';
-				document.getElementByClass('abdullaex').style.display='none';
+			    if ($(window).width() < 1024) {
+			        document.getElementById('abdullaex').style.display='none';
+					document.getElementById('mohammedex').style.display='none';
+					document.getElementById('rheaex').style.display='none';
+					document.getElementById('noorinex').style.display='none';
+					document.getElementById('sarahex').style.display='none';
+			    }else{
+			    };
 			</script>
 	</body>
 </html>
