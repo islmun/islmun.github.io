@@ -106,17 +106,21 @@
 						<div id="map" style="width:100%;height:30em;background: #002b4f;"></div>
 
 						<script>
-						function myMap() {
-						var mapOptions = {
-						    center: new google.maps.LatLng(25.3983685,51.4481307),
-						    zoom: 10,
-						    mapTypeId: google.maps.MapTypeId.HYBRID
-						}
-						var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-						}
-						</script>
-
-						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzFbpA-4YLmBPuWz7GmPBUUL436xcPJVQ&callback=myMap"></script>
+						function initMap() {
+					        var ISL = {lat: 25.3983685, lng: 51.4481307};
+					        var map = new google.maps.Map(document.getElementById('map'), {
+					          zoom: 5,
+					          center: ISL
+					        });
+					        var marker = new google.maps.Marker({
+					          position: ISL,
+					          map: map
+					        });
+					      }
+					    </script>
+					    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzFbpA-4YLmBPuWz7GmPBUUL436xcPJVQ&callback=myMap"></script>
+					    <br />
+					    <br />
 					<img src="map.jpg" alt="Map to ISL Qatar" style="width: 100%;">
 					</p>
 					</center>
