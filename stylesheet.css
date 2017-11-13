@@ -212,25 +212,20 @@ footer{
 	margin-top:0.5em;
 	vertical-align: center;
 }
-#abdullaex{
-	padding-bottom:3em;
-	padding-top: -4em;
+.abdullaex{
+	display: block;
 }
-#rheaex{
-	padding-bottom:3em;
-	padding-top: -4em;
+.rheaex{
+	display: block;
 }
-#mohammedex{
-	padding-bottom:3em;
-	padding-top: -4em;
+.mohammedex{
+	display: block;
 }
-#noorinex{
-	padding-bottom:3em;
-	padding-top: -4em;
+.noorinex{
+	display: block;
 }
-#sarahex{
-	padding-bottom:3em;
-	padding-top: -4em;
+.sarahex{
+	display: block;
 }
 /* NEW NAV BAR */
 		#nav
@@ -416,6 +411,21 @@ footer{
 				text-align: justify;
 			    text-justify: inter-word;
 			    /*80px header + 40px footer = 120px  */
+			}
+			.abdullaex{
+				height:0;
+			}
+			.rheaex{
+				height:0;
+			}
+			.mohammedex{
+				height:0;
+			}
+			.noorinex{
+				height:0;
+			}
+			.sarahex{
+				height:0;
 			}
 			#nav
 			{
