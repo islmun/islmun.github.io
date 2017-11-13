@@ -91,25 +91,23 @@
 		<main>
 			<!-- Band Description -->
 			<center>
-			<section class="container600" style="padding-top: 4em;">
+			<section class="container600" style="padding-top: 4em; overflow: hidden;">
 				<center>
 					<h2 class="">Contact Us:</h2>
 					<p class="coolio" style="font-family:'mic32lightit';">Director: Ms. Smita Shetty</p>
 					<p style="text-align: center; text-justify: inter-word;"><a href="tel:0097433287500" class="blackbgrndfoot">+974 3328 7500</a></p>
 					<p class="coolio" style="font-family:'mic32lightit';">Secretary General: Mr. Jan Sedlacek</p>
 					<p style="text-align: center; text-justify: inter-word;"><a href="tel:0097433552479" class="blackbgrndfoot">+974 3355 2479</a> (Message or WhatsApp)</p>
-					<p class="coolio" style="font-family: 'mic32lightit';"> Maps:</p>
-					<p style="text-align: center; text-justify: inter-word;"><a href="https://www.google.com/maps/place/International+School+of+London,+ISL+Qatar/@25.3983685,51.4481307,17z/data=!3m1!4b1!4m5!3m4!1s0x3e45ddf5614a4f4b:0xbc410f28ccce4828!8m2!3d25.3983637!4d51.4503194" class="blackbgrndfoot">Google Maps Location</a> <br/>
+					<p class="coolio" style="font-family: 'mic32lightit'; font-size: 25px;"> Maps:</p>
 						<br />
-						<p class="coolio" style="font-family:'mic32lightit';">Intractive Location:</p>
-
-						<div id="map" style="width:100%;height:30em;background: #002b4f; text-align: center; overflow: hidden; float:center;"></div>
-
+					<p class="coolio" style="font-family:'mic32lightit';">Interactive Location:</p>
+					<span style="overflow: auto; position: static;">
+						<div id="map" class="w3-content" style=" width:100%;height:30em;background: #002b4f; text-align: center; overflow: auto; float:center; position: relative;"></div>
 						<script>
 						function initMap() {
 					        var ISL = {lat: 25.398385, lng: 51.45066};
 					        var map = new google.maps.Map(document.getElementById('map'), {
-					          zoom: 90,
+					          zoom: 85,
 					          center: ISL
 					        });
 					        var marker = new google.maps.Marker({
@@ -123,8 +121,8 @@
 					    <br />
 					    <br />
 					<img src="map.jpg" alt="Map to ISL Qatar" style="width: 100%;">
-					</p>
-					</center>
+					</span>
+				</center>
 			</section> 
 			</center>
 		</main>
