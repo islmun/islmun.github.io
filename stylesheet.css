@@ -227,6 +227,11 @@ footer{
 .sarahex{
 	display: block;
 }
+#map {
+    height: 400px;
+    width: 100%;
+    }
+
 /* NEW NAV BAR */
 		#nav
 		{
