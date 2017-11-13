@@ -127,6 +127,7 @@ a.blackbgrndfoot{
 	right: 0; 
 	margin: 0 auto;
 	float:center;
+	height: 90%;
 }
 .slideshow{
 	padding: 4em 0em 0 0em;
@@ -396,14 +397,18 @@ footer{
 				margin: 0;
 			}
 		}
-
 		@media only screen and ( max-width: 65.6em ) /* 1050 */
 		{
 			html
 			{
 				font-size: 75%; /* 12 */
 			}
-
+			.mySlides{
+				max-height: none;
+				height:auto !important;
+				width:100%;
+				vertical-align: center;
+			}
 			.container40per{
 				display:inline-block;
 				padding: 2em 2em 2em 2em;
