@@ -151,7 +151,7 @@ a.blackbgrndfoot{
 .container600{
 	display:inline-block;
 	padding: 2em 2em 2em 2em;
-	max-width: 800px;
+	max-width: 50.0000em;
 	text-align: justify;
     text-justify: inter-word;
     /*80px header + 40px footer = 120px  */
@@ -193,6 +193,29 @@ a.blackbgrndfoot{
 	border-radius: 1em;
 	color:white;
 }
+
+.centersixths{	
+	position: inline-block;
+	text-align: center;
+	/*text-align: justify;*/
+    /*text-justify: inter-word;*/
+}
+.centersixthstop{	
+	position: inline-block;
+	text-align: center;
+	padding-top: 3em;
+	/*text-align: justify;*/
+    /*text-justify: inter-word;*/
+}
+.sixths{
+	width:12%;
+	background-color:  rgba(0,43,79,1);
+	display:inline-block;
+	margin: 2em 2% 2em 2%;
+	border-radius: 1em;
+	color:white;
+}
+
 button{
 	background-color: rgba(0, 0, 0, 0.5);
 	border: none;
@@ -544,6 +567,29 @@ footer{
 				    /*text-justify: inter-word;*/
 				}
 				.thirds{
+					width:90%;
+					background-color:  rgba(0,43,79,1);
+					display:inline-block;
+					margin: 2em 3% 2em 3%;
+					border-radius: 1em;
+					color:white;
+				}
+
+				/*Center Sixths Layout Style*/
+				.centersixths{	
+					position: inline-block;
+					text-align: center;
+					/*text-align: justify;*/
+				    /*text-justify: inter-word;*/
+				}
+				.centersixthstop{	
+					position: inline-block;
+					text-align: center;
+					padding-top: 3em;
+					/*text-align: justify;*/
+				    /*text-justify: inter-word;*/
+				}
+				.sixths{
 					width:90%;
 					background-color:  rgba(0,43,79,1);
 					display:inline-block;
