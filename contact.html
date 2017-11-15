@@ -112,14 +112,14 @@
 					        var ISL = {lat: 25.398385, lng: 51.45066};
 					        var map = new google.maps.Map(document.getElementById('map'), {
 					          zoom: 15,
-					          center: ISL,
-					          mapTypeId: 'satellite'
+					          center: ISL
 					        });
 					        var marker = new google.maps.Marker({
 					          position: ISL,
 					          
 					        });
 					      }
+					    map.setMapTypeId('satellite');
 					    </script>
 					    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzFbpA-4YLmBPuWz7GmPBUUL436xcPJVQ&callback=initMap"></script>
 
