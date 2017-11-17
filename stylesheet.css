@@ -157,11 +157,21 @@ a.blackbgrndfoot{
     /*80px header + 40px footer = 120px  */
 }
 .container40per{
-	display:inline-block;
+	display:table-cell;
 	padding: 2em 2em 2em 2em;
-	max-width: 40%;
+	width: 40%;
 	text-align: justify;
     text-justify: inter-word;
+    vertical-align: top;
+    /*80px header + 40px footer = 120px  */
+}
+.container40pertop{
+	display:table-cell;
+	padding: 4em 2em 2em 2em;
+	width: 40%;
+	text-align: justify;
+    text-justify: inter-word;
+    vertical-align: top;
     /*80px header + 40px footer = 120px  */
 }
 .center{
@@ -435,7 +445,15 @@ footer{
 			.container40per{
 				display:inline-block;
 				padding: 2em 2em 2em 2em;
-				max-width: 80%;
+				width: 80%;
+				text-align: justify;
+			    text-justify: inter-word;
+			    /*80px header + 40px footer = 120px  */
+			}
+			.container40pertop{
+				display:inline-block;
+				padding: 2em 2em 2em 2em;
+				width: 80%;
 				text-align: justify;
 			    text-justify: inter-word;
 			    /*80px header + 40px footer = 120px  */
