@@ -265,6 +265,20 @@ footer{
     width: 100%;
     }
 
+.calenderzaz{
+	position:absolute; 
+	z-index:10; 
+	bottom: 8em; 
+	left:0.5em; 
+	float:right; 
+	border-style:solid; 
+	border-width:5px; 
+	border-color:rgba(0,43,79,1); 
+	padding:0.1em 0.2em 0.1em 0.2em; 
+	width:17.1em; 
+	background-color: #FFF;
+}
+
 /* NEW NAV BAR */
 		#nav
 		{
@@ -435,6 +449,10 @@ footer{
 			html
 			{
 				font-size: 75%; /* 12 */
+			}
+			.calenderzaz{
+				left:50%;
+				right:50%;
 			}
 			.mySlides{
 				max-height: none;

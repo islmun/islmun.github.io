@@ -150,6 +150,35 @@
 					</p>
 			</section> 
 			</center> -->
+			
+			<div class="calendarzaz" id="calendarzaz" style="position:absolute; z-index:10; bottom: 6em; left:0.5em; float:right; border-style:solid; border-width:5px; border-color:rgba(0,43,79,1); padding:0 0.2em 0.1em 0.2em; width:25em; background-color: #FFF;">
+			<button type="button" id="minimize" style="display:inline-block" onclick="document.getElementById('calendarzaz').style.display='none'; document.getElementById('maximize').style.display='block'; ">-</button> 
+			<p class="coolio" style="text-align:center; padding:0.05em 0.05em 0.05em 3.5em; display:inline-block;">&nbsp; &nbsp;<i>Event Calendar:</i></p> 
+			<table style=" width:25em; border-color:rgba(0,43,79,1); border-style:hidden;">
+				<tr>
+					<th style="padding:0.1em; border-color:rgba(0,43,79,1); border-right:hidden; text-align:center; padding-left:0;">13rd Nov. 2017</th>
+					<th style="padding:0.1em; border-color:rgba(0,43,79,1); /*border-style:hidden;*/ text-align:center; ">8th Dec. 2017</th>
+				</tr>
+				<tr>
+					<td style="padding:0.1em; border-color:rgba(0,43,79,1);/* border-style:hidden;*/ text-align:center; padding-left:0;">Payment Deadline</td>
+					<td style="padding:0.1em; border-color:rgba(0,43,79,1); /*border-style:hidden;*/ text-align:center; ">Student Officer Training Day</td>
+				</tr>
+			</table>
+			<p style="padding:0 0 0 0; line-height: 2em; font-size: 7pt;">&nbsp;</p>
+			<table style=" width:25em; border-style:hidden;">
+				<tr>
+					<th style="padding:0.1em; border-color:rgba(0,43,79,1); border-right:hidden; text-align:center; padding-left:0;">12th Jan. 2018</th>
+					<th style="padding:0.1em; border-color:rgba(0,43,79,1);/* border-style:hidden;*/ text-align:center; ">13th Jan. 2018</th>
+				</tr>
+				<tr>
+					<td style="padding:0.1em; border-color:rgba(0,43,79,1); /*border-style:hidden;*/ text-align:center; padding-left:0;">Conference Day 1</td>
+					<td style="padding:0.1em; border-color:rgba(0,43,79,1); /*border-style:hidden;*/ text-align:center; "> Conference Day 2</td>
+				</tr>
+			</table>
+			</div>
+			<div class="maximize" id="maximize" style="position:absolute; bottom:10em; display:none;">
+				<button type="button" onclick="document.getElementById('calendarzaz').style.display='block';document.getElementById('maximize').style.display='none'">+</button>
+			</div>
 		</main>
 		<footer>
 			<center>
@@ -198,6 +227,7 @@
 			}
 
 			window.alert("This website is still under maintenance: some pages are currently unfinished, and will be updated as the conference date approaches. \nThank you for your understanding.");
+
 			// //Automatic Slideshow - change image every 3 seconds
 			// carousel();
 			
