@@ -264,6 +264,11 @@ footer{
     height: 400px;
     width: 100%;
     }
+button.frontpage{
+	background-color: #f39000;
+	color: rgba(0,43,79,1);
+	font-size: 16pt;
+}
 
 .calenderzaz{
 	position:absolute; 

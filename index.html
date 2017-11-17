@@ -151,17 +151,18 @@
 			</section> 
 			</center> -->
 			
-			<div class="calendarzaz" id="calendarzaz" style="position:absolute; z-index:10; bottom: 6em; left:0.5em; float:right; border-style:solid; border-width:5px; border-color:rgba(0,43,79,1); padding:0 0.2em 0.1em 0.2em; width:25em; background-color: #FFF;">
-			<button type="button" id="minimize" style="display:inline-block" onclick="document.getElementById('calendarzaz').style.display='none'; document.getElementById('maximize').style.display='block'; ">-</button> 
-			<p class="coolio" style="text-align:center; padding:0.05em 0.05em 0.05em 3.5em; display:inline-block;">&nbsp; &nbsp;<i>Event Calendar:</i></p> 
+			<div class="calendarzaz" id="calendarzaz" style="position:absolute; z-index:10; bottom: 6em; right:0.5em; float:right; border-style:solid; border-width:5px; border-color:rgba(0,43,79,1); padding:0 0.2em 0.1em 0.2em; width:25em; background-color: #FFF;">
+			<p class="coolio" style="text-align:center; padding:0.05em 3.5em 0.05em 0.05em; display:inline-block;">&nbsp; &nbsp;<i>Event Calendar</i></p> <button class="frontpage" type="button" id="minimize" style="display:inline-block; float:right;" onclick="document.getElementById('calendarzaz').style.display='none'; document.getElementById('maximize').style.display='block'; ">-</button> 
 			<table style=" width:25em; border-color:rgba(0,43,79,1); border-style:hidden;">
 				<tr>
-					<th style="padding:0.1em; border-color:rgba(0,43,79,1); border-right:hidden; text-align:center; padding-left:0;">13rd Nov. 2017</th>
+					<th style="padding:0.1em; border-color:rgba(0,43,79,1); border-right:hidden; text-align:center; padding-left:0;">13th Nov. 2017</th>
 					<th style="padding:0.1em; border-color:rgba(0,43,79,1); /*border-style:hidden;*/ text-align:center; ">8th Dec. 2017</th>
+					<th style="padding:0.1em; border-color:rgba(0,43,79,1); /*border-style:hidden;*/ text-align:center; ">12th Dec. 2017</th>
 				</tr>
 				<tr>
 					<td style="padding:0.1em; border-color:rgba(0,43,79,1);/* border-style:hidden;*/ text-align:center; padding-left:0;">Payment Deadline</td>
 					<td style="padding:0.1em; border-color:rgba(0,43,79,1); /*border-style:hidden;*/ text-align:center; ">Student Officer Training Day</td>
+					<td style="padding:0.1em; border-color:rgba(0,43,79,1); /*border-style:hidden;*/ text-align:center; ">Research Publishing</td>
 				</tr>
 			</table>
 			<p style="padding:0 0 0 0; line-height: 2em; font-size: 7pt;">&nbsp;</p>
@@ -176,8 +177,8 @@
 				</tr>
 			</table>
 			</div>
-			<div class="maximize" id="maximize" style="position:absolute; bottom:10em; display:none;">
-				<button type="button" onclick="document.getElementById('calendarzaz').style.display='block';document.getElementById('maximize').style.display='none'">+</button>
+			<div class="maximize" id="maximize" style="position:absolute; bottom:10em; right:0; display:none;">
+				<button class="frontpage" type="button" onclick="document.getElementById('calendarzaz').style.display='block';document.getElementById('maximize').style.display='none'">+</button>
 			</div>
 		</main>
 		<footer>
