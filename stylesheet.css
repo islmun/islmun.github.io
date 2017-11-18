@@ -209,6 +209,9 @@ a.blackbgrndfoot{
 	text-align: center;
 	/*text-align: justify;*/
     /*text-justify: inter-word;*/
+    display:table; 
+    border-collapse: separate; 
+    border-spacing: 1em;
 }
 .centersixthstop{	
 	position: inline-block;
@@ -224,6 +227,12 @@ a.blackbgrndfoot{
 	margin: 2em 2% 2em 2%;
 	border-radius: 1em;
 	color:white;
+	height:12em; 
+	top:0; 
+	vertical-align: center; 
+	display: table-cell; 
+	padding-top:2em;
+	text-align: center;
 }
 
 button{
@@ -625,8 +634,10 @@ button.frontpage:hover{
 				.centersixths{	
 					position: inline-block;
 					text-align: center;
+					display:block;
 					/*text-align: justify;*/
 				    /*text-justify: inter-word;*/
+				    all: unset;
 				}
 				.centersixthstop{	
 					position: inline-block;
@@ -634,11 +645,12 @@ button.frontpage:hover{
 					padding-top: 3em;
 					/*text-align: justify;*/
 				    /*text-justify: inter-word;*/
+				    all: unset;
 				}
 				.sixths{
 					width:90%;
 					background-color:  rgba(0,43,79,1);
-					display:inline-block;
+					display: inline-block;
 					margin: 2em 3% 2em 3%;
 					border-radius: 1em;
 					color:white;
