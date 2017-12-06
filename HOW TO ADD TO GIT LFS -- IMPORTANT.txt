@@ -1,0 +1,25 @@
+in git bash shell:
+
+1:
+git lfs install
+
+2:
+git lfs track "*.FILETYPE"
+
+3:
+git add .gitattributes
+
+4:
+git add .gitattributes "*.FILETYPE"
+
+5:
+git add FILENAME.FILETYPE
+
+5b: (If 5 doesn't work (AKA File is untracked, basically try repeating it again)
+git add FILENAME.FILENAME
+
+6:
+git commit -m "Added FILENAME"
+
+7:
+git push origin master
