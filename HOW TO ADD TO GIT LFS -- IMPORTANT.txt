@@ -23,3 +23,9 @@ git commit -m "Added FILENAME"
 
 7:
 git push origin master
+
+8: TO REFERENCE FILE - IN HTML PAGE
+<video width="100%" height="auto" controls>
+<source src="https://media.githubusercontent.com/media/islmun/islmun.github.io/master/FILENAME.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
